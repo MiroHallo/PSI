@@ -1,0 +1,11 @@
+Crustal model (average Kumamoto, Japan)
+number of layers
+  6
+Parameters of the layers
+depth of layer top(km)   Vp(km/s)    Vs(km/s)    Rho(g/cm**3)    Qp     Qs
+0.000    4.417    2.436    2.503    627    369
+1.120    5.792    3.395    2.700    679    400
+3.010    6.255    3.703    2.776    680    400
+5.140    6.400    3.800    2.800    680    400
+13.580    6.774    4.037    2.940    740    435
+17.340    7.484    4.490    3.194    848    499

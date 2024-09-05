@@ -1,0 +1,53 @@
+#Run in debug mode (0=normal, 1=full_log, 2=debug_files)
+0
+#Type of the used data (0=real_data, 1=synth_data1, 2=synth_data2, -1=read_tfin)
+0
+#Type of the used covariance matrix (1=SACF, 2=ACF, 3=diagonal)
+2
+#Compute CD or read already computed standardized data (0=compute, 1=read)
+0
+#Real data filename (used if syntdata==0)
+var_Unez.tmp
+#Source SR function filename (used if syntdata==-1)
+var_tfin.tmp
+-----------------------------------------------------------------------
+#Define number of chains for parallel tempering (PT)
+30
+#Number of chain steps per temperature for PT
+100000
+#Number of burn in samples for skipping models for PT
+3000
+-----------------------------------------------------------------------
+#Maximal number of efficient spline control points
+50
+#Slip constraint on top of faults (0=zero slip constraint on top, 1=no constraint on top)
+0
+#Spacing (meters) among points for travel-time computation
+500.0
+#Time shift of the synthetic seismograms [sec] (negative means later synthetics)
+0.0
+#Segment time delay [sec] (for all segments in line)
+1.0   2.0
+#Number of control points along strike (for all segments in line)
+7   13
+#Number of control points along dip (for all segments in line)
+7   7
+-----------------------------------------------------------------------
+#Thresholds for PT - Rupture velocity (min, max, stepSigma) [m/s]
+1700.0  5000.0  50.0
+#Thresholds for PT - Rise time (min, max, stepSigma) [s]
+2.0  6.5  0.05
+#Thresholds for PT - Peak time (min, max, stepSigma) [s]
+0.8  2.2  0.05
+#Thresholds for PT - Rake (+/-abs(max), stepSigma) [deg]
+45.0  1.0
+#Thresholds for PT - Hypocenter (+/-max(in_strike), +/-max(in_depth), stepSigma) [m]
+8000.0  8000.0  100.0
+#Thresholds for PT - Segment delay (+/-max(1st_segmentt), +/-max(other_segments), stepSigma) [s]
+1.0  1.5  0.05
+#Thresholds for PT - Scalar seismic moment (+/-abs(max)) [Nm]
+5.d19
+#Thresholds for PT - Spline points (pos-stepSigma, val-stepSigma) [m]
+50.0  0.01
+#Thresholds for PT - Probability to change dimension [*100%]
+0.05

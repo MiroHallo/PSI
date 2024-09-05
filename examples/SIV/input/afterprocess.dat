@@ -1,0 +1,14 @@
+#Number of bins for afterprocessing statistics
+23
+#Maximum expected slip [m] (for bins)
+2.5
+#Maximum expected rupture time [s] (for bins)
+10.0
+#Maximum expected peak slip-rate [m/s] (for bins)
+4.0
+#Minimum data variance reduction (for misfit bins)
+70.0
+#Oversampling cell grid factor for hypocentrum stats
+5
+#Each Xth slip-rate function sample for creation of the time slice (*dt for [s])
+5

@@ -1,0 +1,40 @@
+Number of computed frequencies (should be larger than half of the temporal discretization)
+135
+Number of samples in the time domain
+256
+Length of seismograms, slip rate time window, start and end time for waveform comparison (sec) (LAST 3 CAN BE TUNED AFTER GF COMPUTATION)
+102.4 20.0  30.0 70.0
+Artificial time shift (sec)
+30.0
+Number of receivers (waveforms, static GPS)
+36  0
+Scalar seismic moment (Nm) (CAN BE TUNED AFTER GF COMPUTATION)
+6.5e19
+Number of segments
+2
+Number of computed rakes (1 .. fixed rake; 2 .. input rake +/-45)
+2
+Reserved (not used now)
+123456789
+Strike  Dip   Rake  (degrees) for all segments
+205.    72.   -160.
+235.    65.   -142.
+Length and width of the fault segments (m)
+18000.   18000.
+34000.   18000.
+Spatial discretization along strike and dip for all segments
+9 9
+17 9
+Position of reference point (hypocenter) on the fault (m) (along strike and dip; [0,0] is bottom left corner of the fault)
+5000.  6000.
+34000.  6000.
+Depth (m) of fault reference point (hypocenter) for all segments
+12000.
+12000.
+Relative position (offsets) of ref. point of segments (m) (northing, easting). The first segment has always 0.  0.
+0.         0.
+4530.      -1000.
+Number of filter ranges, followed by corner frequencies (CAN BE TUNED AFTER GF COMPUTATION)
+2
+0.05     0.50
+0.05     0.50

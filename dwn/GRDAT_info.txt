@@ -1,0 +1,15 @@
+ Info file to GRDAT.HED
+ NC      =      Number of layers in the velocity model (not used !!!)
+ NFREQ   =      Number of frequencies to compute
+ TL      =   	Length of the time window to compute (sec)
+ AW      =		Something to do with average period of waves in seconds (not sure!!!)
+ NR      =      Number of receivers (in stations.dat file)
+ NS      =      Number of sources (keep 1)
+ XL      =      Maximal distance (km) (should be >> to source-receiver distance)
+ IKMAX   =      Maximal number of iterations
+ UCONV   =		(not idea!!!)
+ FREF    =   	Refeerence frequency (Hz)
+ 
+ 1/TL    =  delta frequency (Hz)
+ 1/TL * (NFREQ-1) = max frequency (Hz)
+ dt = TL/(2^mm) mm set in .for code
