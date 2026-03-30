@@ -1,8 +1,11 @@
-# Parametric Slip Inversion (PSI)
+# Transdimensional Bayesian Fault-slip Inversion
 ***************************************
 
-  Open-source functions for the Trans-dimensional Bayesian fault slip
-  inversion folowing Hallo and Gallovic (2020).
+  Open-source codes for the Transdimensional Bayesian Fault-slip Inversion
+  (Parametric Slip Inversion, PSI) folowing Hallo and Gallovic (2020). The model space 
+  is sampled by the Markov Chain Monte Carlo (MCMC) with Parallel Tempering that alows 
+  exploration of highly-dimensional model spaces. The code is parallelized in Fortran by MPI
+  (CPU) that alows usage of High-Performance Computing (HPC) clusters.
 
 1 METHODOLOGY
 ===================
@@ -10,9 +13,16 @@
   Hallo, M., Gallovic, F. (2020). Bayesian self-adapting fault slip
 inversion with Green's functions uncertainty and application on the
 2016 Mw7.1 Kumamoto earthquake, Journal of Geophysical Research: 
-Solid Earth, 125, e2019JB018703.
+Solid Earth, 125, e2019JB018703. [https://doi.org/10.1029/2019JB018703](https://doi.org/10.1029/2019JB018703)
 
-2 COPYRIGHT
+2 TECHNICAL IMPLEMENTATION
+===================
+
+Bayesian Inference, Markov Chain Monte Carlo (MCMC), Uncertainty Quantification,
+High-Performance Computing (HPC), Code Parallelization (MPI/CPU), Transdimensional Bayesian Inference, 
+Data-driven Inversion, Occam's razor
+
+3 COPYRIGHT
 ===================
 
 Copyright (C) 2017-2019  Miroslav Hallo
@@ -31,39 +41,61 @@ and don't remove their names from the code.
 You should have received copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 
-3 REQUIREMENTS
+4 REQUIREMENTS
 ===================
 
   a) Compiled "pt.f90" 
+  
     - Parallel Tempering library (M.Sambridge)
-    - http://www.iearth.org.au/codes/ParallelTempering/
+    
+    - http://www.iearth.edu.au/codes/ParallelTempering/
+    
   b) Compiled "time_2d.c" 
+  
     - Finite-differences computation of 2D travel time library (P.Podvin)
+    
     - https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c
+    
   c) Compiled "gr_nez.for" and "cnv_nez.for"
+  
     - Discrete wavenumber method for Green's functions computation (M.Bouchon)
+    
     - https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn
+    
   d) LINUX/UNIX machine with LAPACK or MKL
+  
   e) Fortran90 and MPI compilers
+  
   f) MATLAB for ploting results
 
-4 PACKAGE STRUCTURE
+5 PACKAGE STRUCTURE
 ===================
 
-  <dwn>       - Directory containing Green's functions computation
-  <examples>  - Directory containing examples of input files
-  <input>     - Directory with input files
-  <inv>       - Work directory for the ongoing inversion
-  <lib>       - Directory with compiled libraries and additional functions
-  <src>       - Directory with source codes of the PSI
+  dwn       - Directory containing Green's functions computation
+  
+  examples  - Directory containing examples of input files
+  
+  input     - Directory with input files
+  
+  inv       - Work directory for the ongoing inversion
+  
+  lib       - Directory with compiled libraries and additional functions
+  
+  src       - Directory with source codes of the PSI
+  
   plot_prepare.m            - Plots prepared suf-faults for Green's functions
+  
   plot_psi_fit.m            - Plots final data fit
+  
   plot_psi_model.m          - Plots final fault-slip model
+  
   plot_psi_posteriorPDF.m   - Plots ensemble statistics
+  
   run_psi.sh                - Run the PSI inversion
+  
   run_res.sh                - Run post-processing of the PSI inversion
 
-5 INSTALATION
+6 INSTALATION
 ===================
 
   1) Compile Green's functions computation codes in the <dwn> folder
@@ -71,7 +103,7 @@ with this program. If not, see <http://www.gnu.org/licenses/>.
   3) Set your compilers in MAKEFILE in the <src> folder
   4) Compile the PSI by using the MAKEFILE, executable binaries should appear
   
-6 EXECUTE INVERSION
+7 EXECUTE INVERSION
 ===================
 
   1) Set input parameters into files of the <input> folder
