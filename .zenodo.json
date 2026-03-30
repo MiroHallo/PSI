@@ -1,0 +1,18 @@
+{
+  "title": "Data-driven Transdimensional Bayesian fault-slip inversion",
+  "description": "Codes for Transdimensional Bayesian fault-slip inversion with Green's functions uncertainty and self-adapting complexity of the model space.",
+  "creators": [
+    {
+      "name": "Hallo, Miroslav",
+      "affiliation": "Charles University", 
+	  "orcid": "0000-0001-5865-7767"
+    }
+  ],
+  "access_right": "open",
+  "license": "GPL-3.0-or-later",
+  "keywords": ["Bayesian Inference", "Uncertainty Quantification", "Seismology", "Earthquake Source", "MCMC", "HPC", "MPI", "Parallel Computing"],
+  "resource_type": {
+    "type": "software",
+    "title": "Software"
+  }
+}
