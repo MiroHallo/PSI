@@ -12,6 +12,14 @@
   "access_right": "open",
   "license": "GPL-3.0-or-later",
   "keywords": ["Bayesian Inference", "Uncertainty Quantification", "Seismology", "Earthquake Source", "MCMC", "HPC", "MPI", "Parallel Computing"],
+   "related_identifiers": [
+    {
+      "scheme": "doi",
+      "identifier": "10.1029/2019JB018703",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    }
+  ],
   "version": "v1.0",
   "publication_date": "2019-02-15",
   "language": "eng",
