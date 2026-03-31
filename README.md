@@ -2,10 +2,10 @@
 ***************************************
 
   Open-source codes for the Transdimensional Bayesian Fault-slip Inversion
-  (Parametric Slip Inversion, PSI) folowing Hallo and Gallovic (2020). The model space 
-  is sampled by the Markov Chain Monte Carlo (MCMC) with Parallel Tempering that alows 
+  (Parametric Slip Inversion, PSI) following Hallo and Gallovic (2020). The model space 
+  is sampled by the Markov Chain Monte Carlo (MCMC) with Parallel Tempering that allows 
   exploration of highly-dimensional model spaces. The code is parallelized in Fortran by MPI
-  (CPU) that alows usage of High-Performance Computing (HPC) clusters.
+  (CPU) that allows usage of High-Performance Computing (HPC) clusters.
 
 1 METHODOLOGY
 ===================
