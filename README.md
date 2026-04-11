@@ -98,7 +98,7 @@ make
   
   Note: See connected example files for the structure of ASCII input files and observed data
   
-  The flowchart below illustrates the Master-Slave (Manager-Worker) paradigm implemented via MPI. 
+  The flowchart below illustrates the Manager-Worker paradigm implemented via MPI. 
   A dedicated Master node coordinates the communication and task distribution (Parallel Tempering 
   swaps), while multiple Worker nodes perform independent MCMC sampling in parallel to 
   maximize HPC throughput.
