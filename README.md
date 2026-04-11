@@ -98,6 +98,12 @@ make
   
   Note: See connected example files for the structure of ASCII input files and observed data
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="img/PSI.png">
+  <source media="(prefers-color-scheme: light)" srcset="img/PSI.png">
+  <img alt="HPC-parallelized PSI scheme" src="img/PSI.png">
+</picture>
+
 8 COPYRIGHT
 ===================
 
