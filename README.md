@@ -97,11 +97,16 @@ make
   9. Plot and see results in the `inv` folder by MATLAB scripts in the PSI root folder
   
   Note: See connected example files for the structure of ASCII input files and observed data
+  
+  The flowchart below illustrates the Master-Slave (Manager-Worker) paradigm implemented via MPI. 
+  A dedicated Master node coordinates the communication and task distribution (Parallel Tempering 
+  swaps), while multiple Worker nodes perform independent MCMC sampling in parallel to 
+  maximize HPC throughput.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="img/PSI.png">
   <source media="(prefers-color-scheme: light)" srcset="img/PSI.png">
-  <img alt="HPC-parallelized PSI scheme" src="img/PSI.png">
+  <img alt="HPC-parallelized PSI flowchart" src="img/PSI.png">
 </picture>
 
 8 COPYRIGHT
