@@ -39,8 +39,8 @@ The official software version is archived on Zenodo:
 ===================
 
   1. Compiled `pt.f90`
-   *  Parallel Tempering library (M.Sambridge)
-   *  [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
+     *  Parallel Tempering library (M.Sambridge)
+     *  [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
     
   2. Compiled `time_2d.c` 
     * Finite-differences computation of 2D travel time library (P.Podvin)
