@@ -27,9 +27,9 @@ The official software version is archived on Zenodo:
 ===================
 
 *   **2.0 (Dawn) — Numerical Engine Revision** | December 2019
-	*   Enhanced Occam's Razor: Improved Bayesian model selection logic to more effectively infer optimal model complexity from observed data
-	*   Memory Optimization: Implemented REAL4 (Fortran) precision for covariance matrices, significantly reducing memory footprint for large-scale HPC inversions
-	*   Advanced Visualization: New 2D fault-surface plotting tools for posterior distributions
+    *   Enhanced Occam's Razor: Improved Bayesian model selection logic to more effectively infer optimal model complexity from observed data
+    *   Memory Optimization: Implemented REAL4 (Fortran) precision for covariance matrices, significantly reducing memory footprint for large-scale HPC inversions
+    *   Advanced Visualization: New 2D fault-surface plotting tools for posterior distributions
     *   Key Publication: Core implementation used by paper published in Journal of Geophysical Research: Solid Earth (Hallo and Gallovic, 2020)
 
 *   **1.0 (Chasm) — Initial Release** | January 2018
@@ -39,16 +39,16 @@ The official software version is archived on Zenodo:
 ===================
 
   1. Compiled `pt.f90`
-    *   Parallel Tempering library (M.Sambridge)
-    *   [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
+    *  Parallel Tempering library (M.Sambridge)
+    *  [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
     
   2. Compiled `time_2d.c` 
-    *   Finite-differences computation of 2D travel time library (P.Podvin)
-    *   [https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c](https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c)
+    *  Finite-differences computation of 2D travel time library (P.Podvin)
+    *  [https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c](https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c)
     
   3. Compiled `gr_nez.for` and `cnv_nez.for`
-    *   Discrete wavenumber method for Green's functions computation (M.Bouchon)
-    *   [https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn](https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn)
+    *  Discrete wavenumber method for Green's functions computation (M.Bouchon)
+    *  [https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn](https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn)
     
   4. LINUX/UNIX machine with `LAPACK` or `MKL` libraries
   
@@ -77,12 +77,11 @@ The official software version is archived on Zenodo:
 
   1. Compile Green's functions computation codes in the `dwn` folder
   2. Copy the required third-party `PT` and `Time_2d` libraries into `lib` folder
-  3. Set your compilers in `Makefile` in the `src` folder
-  4. To compile Fortran code, type:
+  3. Set your compilers in `Makefile` in the `src` folder and type:
 ```bash
 make
 ```
-  5. Check `stations`, `prepare`, `waves`, `psi_sp`, `psi_ap`, and `psi_pp` binary programs in the project root directory
+  4. Check `stations`, `prepare`, `waves`, `psi_sp`, `psi_ap`, and `psi_pp` binary programs in the project root directory
    
 7 USAGE
 ===================
