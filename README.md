@@ -104,9 +104,9 @@ make
   maximize HPC throughput.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="img/PSI.png">
-  <source media="(prefers-color-scheme: light)" srcset="img/PSI.png">
-  <img alt="HPC-parallelized PSI flowchart" src="img/PSI.png">
+  <source media="(prefers-color-scheme: dark)" srcset="img/PSI_flowchart_dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="img/PSI_flowchart_light.png">
+  <img alt="HPC-parallelized PSI flowchart" src="img/PSI_flowchart_light.png">
 </picture>
 
 8 COPYRIGHT
