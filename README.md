@@ -33,6 +33,7 @@ The official software version is archived on Zenodo:
     *   Key Publication: Core implementation used by paper published in Journal of Geophysical Research: Solid Earth (Hallo and Gallovic, 2020)
 
 *   **1.0 (Chasm) — Initial Release** | January 2018
+    *   Internal-only version
     *   This version served as the core computational framework for the author's PhD thesis
 
 4 REQUIREMENTS
