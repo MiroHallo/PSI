@@ -44,12 +44,12 @@ The official software version is archived on Zenodo:
     * [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
     
 2. Compiled `time_2d.c` 
-     * Finite-differences computation of 2D travel time library (P.Podvin)
-     * [https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c](https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c)
+    * Finite-differences computation of 2D travel time library (P.Podvin)
+    * [https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c](https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c)
     
 3. Compiled `gr_nez.for` and `cnv_nez.for`
-     * Discrete wavenumber method for Green's functions computation (M.Bouchon)
-     * [https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn](https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn)
+    * Discrete wavenumber method for Green's functions computation (M.Bouchon)
+    * [https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn](https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn)
     
 4. LINUX/UNIX machine with `LAPACK` or `MKL` libraries
   
