@@ -29,10 +29,6 @@ Bayesian Inference, Markov Chain Monte Carlo (MCMC), Uncertainty Quantification,
 High-Performance Computing (HPC), Code Parallelization by MPI (CPU), Transdimensional Bayesian Inference, 
 Data-driven Inversion, Occam's razor
 
-The official software version is archived on Zenodo:
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19343665.svg)](https://doi.org/10.5281/zenodo.19343665)
-
 ## 3 RELEASE HISTORY (MAJOR VERSIONS)
 
 *   **2.0 (Dawn) — Numerical Engine Revision** | December 2019
