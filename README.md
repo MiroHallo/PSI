@@ -2,6 +2,14 @@
 
 Transdimensional Bayesian inversion to infer kinematic finite-extent fault models for large earthquakes
 
+<a href="#cite"><img src="https://img.shields.io/badge/CITE%20AS-grey?style=flat" alt="Cite As"></a>
+[![PAPER](https://img.shields.io/badge/PAPER-10.1029%2F2019JB018703-%23007EC6?style=flat)](https://doi.org/10.1029/2019JB018703)
+[![SOFTWARE](https://img.shields.io/badge/SOFTWARE-10.5281%2Fzenodo.19343665-%23007EC6?style=flat)](https://doi.org/10.5281/zenodo.19343665)
+
+![Fortran](https://img.shields.io/badge/Fortran-%23734f96?style=flat&logo=fortran&logoColor=white)
+![HPC](https://img.shields.io/badge/HPC-MPI%20(CPU)-%23002F5A?style=flat)
+![MATLAB](https://img.shields.io/badge/MATLAB-%23ED7D31?style=flat)
+
 ---
   
  A unique software package for Parametric Slip Inversion (PSI) of earthquake fault-slip models within a full Bayesian framework (Hallo and Gallovic, 2020). The framework is designed as transdimensional and data-driven, meaning the model complexity is inferred directly from the data. This is implemented by a mathematical **Occam's razor** inherent to the Bayesian formulation. The transdimensional model space is sampled using **Markov Chain Monte Carlo** (MCMC) with **Parallel Tempering**, enabling efficient exploration of high-dimensional and non-linear parameter spaces. The code is parallelized in **Fortran** using **MPI** (CPU), specifically optimized for deployment on **High-Performance Computing** (HPC) clusters and large-scale seismic inversions.
@@ -125,6 +133,7 @@ and don't remove their names from the code.
 You should have received a copy of the GNU General Public License along
 with this program. If not, see <http://www.gnu.org/licenses/>.
 
+<a name="cite"></a>
 ## 9 CITE AS
 
 If you use this tools suite, please cite both the original methodology paper (preferred) and the software version as follows:
