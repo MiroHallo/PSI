@@ -1,6 +1,6 @@
 # HPC-parallelized Bayesian Parametric Slip Inversion (PSI)
 
-Transdimensional Bayesian inversion to infer kinematic finite-extent fault models for large earthquakes
+Transdimensional Bayesian inversion to infer kinematic finite-extent fault models for large earthquakes.
 
 <a href="#cite"><img src="https://img.shields.io/badge/CITE%20AS-grey?style=flat" alt="Cite As"></a>
 [![PAPER](https://img.shields.io/badge/PAPER-10.1029%2F2019JB018703-%23007EC6?style=flat)](https://doi.org/10.1029/2019JB018703)
