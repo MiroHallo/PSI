@@ -96,10 +96,10 @@ make
 6. Run `./waves` to prepare vector of observed data `var_Unez.tmp`
 7. Execute PSI inversion using  `./run_psi.sh` bash script
 8. Execute PSI post-processing using  `./run_res.sh` bash script
-9. Plot and see results in the `inv` folder by MATLAB scripts in the PSI root folder
-  
+9. Plot and see results in the `inv` folder by MATLAB scripts in the PSI root folder. If you run the MATLAB script on a server without a graphical user interface, use `matlab -nodisplay -nosplash -nodesktop -r "run('plot_XY.m'); exit;"`.
+
 Note: See connected example files for the structure of ASCII input files and observed data
-  
+
 The flowchart below illustrates the Manager-Worker paradigm implemented via MPI. 
 A dedicated Master node coordinates the communication and task distribution (Parallel Tempering 
 swaps), while multiple Worker nodes perform independent MCMC sampling in parallel to 
