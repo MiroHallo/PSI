@@ -43,23 +43,28 @@ Data-driven Inversion, Occam's razor
 
 ## 4 REQUIREMENTS
 
-1. Compiled `pt.f90`
-    * Parallel Tempering library (M.Sambridge)
+1. LINUX/UNIX machine with `LAPACK` or `MKL` libraries
+
+2. Fortran90 (`gfortran` or `ifort`) and MPI (`mpif90` or `mpiifort`) compilers
+
+3. Compiled and installed `OpenMPI`
+    * High Performance Message Passing Library
+    * Strongly recommend to build it for your particular machine
+    * [https://www.open-mpi.org/](https://www.open-mpi.org/)
+
+4. Compiled Parallel Tempering library `pt.f90`
+    * Parallel Tempering (PT) library (M.Sambridge)
     * [http://www.iearth.edu.au/codes/ParallelTempering/](http://www.iearth.edu.au/codes/ParallelTempering/)
-    
-2. Compiled `time_2d.c` 
+
+5. Compiled `time_2d.c` 
     * Finite-differences computation of 2D travel time library (P.Podvin)
     * [https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c](https://github.com/fgallovic/RIKsrf/blob/master/src-RIKsrf/Time_2d.c)
-    
-3. Compiled `gr_nez.for` and `cnv_nez.for`
+
+6. Compiled `gr_nez.for` and `cnv_nez.for`
     * Discrete wavenumber method for Green's functions computation (M.Bouchon)
     * [https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn](https://github.com/fgallovic/LinSlipInv/tree/master/src-dwn)
-    
-4. LINUX/UNIX machine with `LAPACK` or `MKL` libraries
-  
-5. Fortran90 (`gfortran` or `ifort`) and MPI (`mpif90` or `mpiifort`) compilers
-  
-6. MATLAB R2016b or newer for plotting results
+
+7. MATLAB R2016b or newer for plotting results
 
 ## 5 PACKAGE CONTENT
 
